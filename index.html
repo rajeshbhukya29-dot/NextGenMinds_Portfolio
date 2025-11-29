@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXTGEN MINDS — Master’s Research Project Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Hybrid (Glass hero + clean content) -->
+  <link rel="stylesheet" href="style-portfolio.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="site-header glass">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo.png" alt="NextGen Minds Logo" class="logo" />
+        <div>
+          <h1 class="brand-title">NEXTGEN MINDS</h1>
+          <p class="brand-subtitle">Knowledge. Skills. Future-Ready Careers.</p>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#exec-summary">Executive Summary</a></li>
+          <li><a href="#problem">Problem</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#solution">Solution</a></li>
+          <li><a href="#charter">Charter</a></li>
+          <li><a href="#architecture">Architecture &amp; Data Design</a></li>
+          <li><a href="#data">Data</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#ethics">Ethics</a></li>
+          <li><a href="#reflection">Lessons Learned</a></li>
+          <li><a href="#appendix">Appendix</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HOME / COVER (HERO) ===== -->
+    <section id="hero" class="section hero-section">
+      <div class="hero-bg">
+        <div class="container hero-grid">
+
+          <!-- Left: intro -->
+          <div class="hero-text glass">
+            <p class="badge">Master’s Research Project</p>
+            <h2>Bridging the Gap Between Students, Skills, and Jobs</h2>
+            <p class="hero-lead">
+              NEXTGEN MINDS is a data-driven career guidance platform that helps students connect
+              their education and skills to real-world job opportunities, while giving employers
+              better visibility into job-ready talent.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn primary" href="https://rajeshbhukya29-dot.github.io/Nextgenminds_12/" target="_blank">
+                Launch Live Application
+              </a>
+              <a class="btn ghost" href="#exec-summary">
+                View Project Summary
+              </a>
+            </div>
+
+            <div class="hero-meta">
+              <span>Team: NEXTGEN MINDS</span>
+              <span>Semester: Fall 2025</span>
+            </div>
+          </div>
+
+          <!-- Right: team -->
+          <div class="hero-side glass">
+            <h3>Meet the Minds of NEXTGEN MINDS</h3>
+            <p class="hero-tagline">
+              “Guiding students from confusion to clarity using data, not guesswork.”
+            </p>
+            <div class="team-grid">
+              <article class="team-card">
+                <img src="images/team-rajesh-bhukya.jpg" alt="Rajesh Bhukya" />
+                <h4>Rajesh Bhukya</h4>
+                <p>CEO / Project Manager</p>
+              </article>
+              <article class="team-card">
+                <img src="images/team-rajesh-bandari.jpg" alt="Rajesh Bandari" />
+                <h4>Rajesh Bandari</h4>
+                <p>Business Analyst</p>
+              </article>
+              <article class="team-card">
+                <img src="images/team-srija-bakshi.jpg" alt="Srija Bakshi" />
+                <h4>Srija Bakshi</h4>
+                <p>Technical Architect</p>
+              </article>
+              <article class="team-card">
+                <img src="images/team-saathwika-sunkari.jpg" alt="Saathwika Sunkari" />
+                <h4>Saathwika Sunkari</h4>
+                <p>Compliance &amp; Research Officer</p>
+              </article>
+              <article class="team-card">
+                <img src="images/team-haripriya.jpg" alt="Haripriya" />
+                <h4>Haripriya</h4>
+                <p>IT Solutions Analyst</p>
+              </article>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXECUTIVE SUMMARY ===== -->
+    <section id="exec-summary" class="section section-light">
+      <div class="container">
+        <h2>Executive Summary</h2>
+        <div class="grid-2">
+          <div class="glass">
+            <p>
+              Students today navigate an incredibly noisy career landscape: hundreds of job titles,
+              rapidly changing technologies, and generic career advice that often fails to connect
+              classroom learning with real opportunities. Many students are unsure which roles they
+              qualify for, which skills they should prioritize, and how to interpret job descriptions.
+              At the same time, employers struggle to find candidates whose skills match their open
+              positions, especially in fast-moving domains such as data, cloud, and software.
+            </p>
+            <p>
+              NEXTGEN MINDS addresses this gap by providing a lightweight but powerful career
+              guidance platform built on top of familiar tools. The system combines a responsive
+              web interface (hosted on GitHub Pages) with Google Sheets as the primary data store
+              and Google Apps Script as a middleware layer. Students register, describe their skills
+              and education, and explore jobs that are dynamically loaded from a structured jobs
+              dataset. Dashboards built on this data reveal trends, skill gaps, and alignment
+              between students and market demand.
+            </p>
+          </div>
+          <div class="glass">
+            <p>
+              The project showcases how thoughtful architecture and data design can turn simple
+              technologies into an effective decision-support tool for students, employers, and
+              academic advisors. It demonstrates end-to-end thinking: from problem definition and
+              stakeholder analysis, through data modeling and synthetic dataset creation, to
+              dashboards that communicate insights at a glance.
+            </p>
+            <p>
+              Ultimately, NEXTGEN MINDS is not just a class assignment; it is a portfolio-ready
+              prototype that could be scaled into a real service to support students in planning
+              their careers with clarity and confidence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROBLEM CONTEXT & STAKEHOLDERS ===== -->
+    <section id="problem" class="section section-alt">
+      <div class="container">
+        <h2>Problem Context &amp; Stakeholders</h2>
+        <div class="grid-2">
+          <div class="glass">
+            <h3>Problem Overview</h3>
+            <ul class="bullet-list">
+              <li>Students struggle to map their skills and degrees to specific job roles.</li>
+              <li>Job descriptions are often unclear about which skills truly matter.</li>
+              <li>Career guidance is frequently generic, not data-driven or personalized.</li>
+              <li>Employers have difficulty identifying candidates who are genuinely job-ready.</li>
+            </ul>
+            <p>
+              This leads to lost opportunities, misaligned applications, and anxiety for students
+              who feel they are “stuck” despite having valuable skills.
+            </p>
+          </div>
+          <div class="glass">
+            <h3>Stakeholders</h3>
+            <ul class="bullet-list">
+              <li>
+                <strong>Students (10+2, undergraduate, graduate):</strong> need personalized career
+                roadmaps, insight into skill gaps, and clarity about which roles match their profiles.
+              </li>
+              <li>
+                <strong>Employers:</strong> want a way to reach students whose skills and interests
+                align with real job requirements.
+              </li>
+              <li>
+                <strong>Academic Advisors &amp; Institutions:</strong> need tools to align programs,
+                advising, and curricula with market trends.
+              </li>
+            </ul>
+            <p>
+              NEXTGEN MINDS is designed at the intersection of these stakeholders, using shared
+              data to create transparency and alignment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESEARCH & INSIGHTS ===== -->
+    <section id="research" class="section section-light">
+      <div class="container">
+        <h2>Research &amp; Insights</h2>
+        <div class="glass">
+          <p>
+            Our research combined informal interviews with students who were actively searching
+            for internships and full-time roles, a review of job postings across common platforms,
+            and analysis of the skills most frequently mentioned in entry-level roles. Students
+            repeatedly expressed uncertainty about whether they were “ready” for specific jobs and
+            which skills were worth investing time in.
+          </p>
+          <p>
+            From employers’ job postings, we extracted recurring patterns in required skills
+            (e.g., Python, SQL, cloud platforms, problem-solving) and experience ranges. These
+            qualitative insights were translated into a data model and then into synthetic datasets
+            that approximate a realistic job market. This research directly informed our entities,
+            attributes, and the metrics surfaced by our dashboards.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROPOSED SOLUTION ===== -->
+    <section id="solution" class="section section-alt">
+      <div class="container">
+        <h2>Proposed Solution</h2>
+        <div class="grid-2">
+          <div class="glass">
+            <h3>System Overview</h3>
+            <p>
+              NEXTGEN MINDS is a web-based platform that centralizes student profiles, job
+              postings, and analytics into a single environment. Students can:
+            </p>
+            <ul class="bullet-list">
+              <li>Register and store their education, experience, and skills.</li>
+              <li>Explore job listings filtered by skills, experience, and role interests.</li>
+              <li>View dashboards summarizing their alignment with the job market.</li>
+              <li>Discover recommended skills or courses to close identified gaps.</li>
+            </ul>
+            <p>
+              Employers are represented via structured job data in Google Sheets, making the
+              system lightweight and easy to maintain.
+            </p>
+          </div>
+          <div class="glass">
+            <h3>Key Features</h3>
+            <ul class="bullet-list">
+              <li>Student registration and login linked to Google Sheets backend.</li>
+              <li>Dynamic jobs page powered by a jobs dataset maintained in Sheets.</li>
+              <li>Skill-based matching and filtering logic on the frontend.</li>
+              <li>Performance dashboards showing skill gaps, demand, and match rates.</li>
+              <li>Contact form so students can reach out for support or feedback.</li>
+            </ul>
+            <p>
+              The solution demonstrates how everyday tools can be orchestrated into an integrated
+              product without requiring heavy infrastructure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECT CHARTER ===== -->
+    <section id="charter" class="section section-light">
+      <div class="container">
+        <h2>Project Charter</h2>
+        <div class="grid-3">
+          <div class="glass">
+            <h3>Objectives</h3>
+            <ul class="bullet-list">
+              <li>Design and implement a functional career guidance prototype.</li>
+              <li>Establish a scalable and clean data model for students, jobs, and employers.</li>
+              <li>Build dashboards that surface actionable insights for decision-making.</li>
+            </ul>
+          </div>
+          <div class="glass">
+            <h3>Scope &amp; Deliverables</h3>
+            <ul class="bullet-list">
+              <li>Responsive multi-page web application (NEXTGEN MINDS).</li>
+              <li>Google Sheets-based datasets with synthetic records.</li>
+              <li>Google Apps Script backend for communication with Sheets.</li>
+              <li>Dashboards summarizing skills, demand, and match metrics.</li>
+              <li>Project portfolio website (this page) for presentation.</li>
+            </ul>
+          </div>
+          <div class="glass">
+            <h3>Team Roles</h3>
+            <ul class="bullet-list">
+              <li><strong>Rajesh Bhukya</strong> – Project Manager &amp; Lead Developer</li>
+              <li><strong>Rajesh Bandari</strong> – Business Analyst</li>
+              <li><strong>Srija Bakshi</strong> – Technical Architect</li>
+              <li><strong>Saathwika Sunkari</strong> – Compliance &amp; Research</li>
+              <li><strong>Haripriya</strong> – IT Solutions &amp; Analytics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ARCHITECTURE & DATA DESIGN ===== -->
+    <section id="architecture" class="section section-alt">
+      <div class="container">
+        <h2>Architecture &amp; Data Design</h2>
+
+        <!-- Enterprise Architecture Diagram -->
+        <div class="glass">
+          <h3>Enterprise Architecture Diagram</h3>
+          <p>
+            The diagram below shows how presentation, application, and data layers interact to
+            deliver the NEXTGEN MINDS experience for students, employers, and academic users.
+          </p>
+          <div class="diagram-wrapper">
+            <svg class="diagram-svg" viewBox="0 0 900 300" role="img" aria-label="Enterprise architecture diagram">
+              <defs>
+                <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto">
+                  <polygon points="0 0, 8 3, 0 6" fill="#4b6fff"></polygon>
+                </marker>
+              </defs>
+
+              <!-- Layers -->
+              <rect x="30" y="30" width="840" height="70" rx="16" class="box" />
+              <text x="450" y="60" class="box-title">Presentation Layer</text>
+              <text x="450" y="83" class="box-text">GitHub Pages UI (Student / Employer / Admin views)</text>
+
+              <rect x="30" y="120" width="840" height="70" rx="16" class="box" />
+              <text x="450" y="150" class="box-title">Application Layer</text>
+              <text x="450" y="173" class="box-text">Google Apps Script Web App (APIs, validation, routing)</text>
+
+              <rect x="30" y="210" width="840" height="70" rx="16" class="box" />
+              <text x="450" y="240" class="box-title">Data Layer</text>
+              <text x="450" y="263" class="box-text">Google Sheets (Students, Jobs, Employers, Contacts, Dashboard feeds)</text>
+
+              <!-- Vertical flows -->
+              <line x1="450" y1="100" x2="450" y2="120" class="arrow" marker-end="url(#arrowhead)" />
+              <line x1="450" y1="190" x2="450" y2="210" class="arrow" marker-end="url(#arrowhead)" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- ER Diagram -->
+<div class="glass">
+  <h3>ER Diagram</h3>
+  <p class="small">Conceptual overview of the relationships between Students, Academic Records, Applications, Employers, and Job Postings.</p>
+
+  <div class="diagram-wrapper">
+    <img src="images/er-diagram.png" alt="ER Diagram" class="diagram-img">
+  </div>
+</div>
+
+
+                <!-- Entities -->
+                <rect x="30" y="30" width="150" height="70" rx="12" class="box" />
+                <text x="105" y="55" class="box-title">STUDENT</text>
+                <text x="105" y="75" class="box-text">student_id, skills, edu_level</text>
+
+                <rect x="340" y="30" width="150" height="70" rx="12" class="box" />
+                <text x="415" y="55" class="box-title">EMPLOYER</text>
+                <text x="415" y="75" class="box-text">employer_id, company</text>
+
+                <rect x="185" y="150" width="150" height="70" rx="12" class="box" />
+                <text x="260" y="175" class="box-title">JOB</text>
+                <text x="260" y="195" class="box-text">job_id, title, skills_req</text>
+
+                <rect x="30" y="170" width="150" height="70" rx="12" class="box" />
+                <text x="105" y="195" class="box-title">CONTACT_MESSAGE</text>
+                <text x="105" y="215" class="box-text">name, email, subject</text>
+
+                <!-- Relationships -->
+                <line x1="105" y1="100" x2="260" y2="150" class="arrow" marker-end="url(#arrowhead2)" />
+                <text x="170" y="130" class="rel-label">applies / matches</text>
+
+                <line x1="415" y1="100" x2="260" y2="150" class="arrow" marker-end="url(#arrowhead2)" />
+                <text x="330" y="130" class="rel-label">posts</text>
+
+                <line x1="105" y1="100" x2="105" y2="170" class="arrow" marker-end="url(#arrowhead2)" />
+                <text x="65" y="145" class="rel-label">submits</text>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Data Model Summary -->
+          <div class="glass">
+            <h3>Data Model (Sheets)</h3>
+            <div class="grid-2">
+              <div>
+                <h4 class="small">Students Sheet</h4>
+                <ul class="bullet-list small">
+                  <li>user_id (PK)</li>
+                  <li>role</li>
+                  <li>first_name, last_name</li>
+                  <li>email</li>
+                  <li>education_level</li>
+                  <li>experience_years</li>
+                  <li>skills (comma-separated)</li>
+                  <li>preferred_role</li>
+                  <li>created_at</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="small">Jobs Sheet</h4>
+                <ul class="bullet-list small">
+                  <li>job_id (PK)</li>
+                  <li>employer_user_id</li>
+                  <li>company_name</li>
+                  <li>job_title, job_type</li>
+                  <li>location</li>
+                  <li>min_exp, max_exp</li>
+                  <li>skills_required</li>
+                  <li>description</li>
+                  <li>required_edu</li>
+                  <li>created_at, status</li>
+                </ul>
+              </div>
+            </div>
+            <h4 class="small">Employers &amp; Contacts</h4>
+            <ul class="bullet-list small">
+              <li>employer_user_id (PK), company_name, email, password, created_at</li>
+              <li>Contact messages: name, email, subject, message, created_at</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Data Flow Explanation + Diagram -->
+        <div class="glass">
+          <h3>Data Flow Explanation</h3>
+          <p>
+            The data flow begins when a student registers or submits a form on the NEXTGEN MINDS
+            frontend. The browser sends the request to Google Apps Script, which validates and
+            writes the data into the appropriate Google Sheet (Students, Jobs, or Contacts).
+            Dashboards and analytics read from these sheets to generate charts and insights.
+          </p>
+          <div class="diagram-wrapper">
+            <svg class="diagram-svg" viewBox="0 0 900 260" role="img" aria-label="Data flow diagram">
+              <defs>
+                <marker id="arrowhead3" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto">
+                  <polygon points="0 0, 8 3, 0 6" fill="#4b6fff"></polygon>
+                </marker>
+              </defs>
+
+              <!-- User -->
+              <rect x="20" y="40" width="170" height="70" rx="12" class="box" />
+              <text x="105" y="65" class="box-title">Student / Employer</text>
+              <text x="105" y="85" class="box-text">Browser (UI)</text>
+
+              <!-- Frontend -->
+              <rect x="230" y="40" width="170" height="70" rx="12" class="box" />
+              <text x="315" y="65" class="box-title">NEXTGEN MINDS UI</text>
+              <text x="315" y="85" class="box-text">GitHub Pages</text>
+
+              <!-- Apps Script -->
+              <rect x="440" y="40" width="170" height="70" rx="12" class="box" />
+              <text x="525" y="65" class="box-title">Google Apps Script</text>
+              <text x="525" y="85" class="box-text">Web App Endpoint</text>
+
+              <!-- Sheets -->
+              <rect x="650" y="25" width="220" height="80" rx="12" class="box" />
+              <text x="760" y="55" class="box-title">Google Sheets</text>
+              <text x="760" y="77" class="box-text">Students / Jobs / Employers / Contacts</text>
+
+              <!-- Dashboard -->
+              <rect x="650" y="140" width="220" height="80" rx="12" class="box" />
+              <text x="760" y="170" class="box-title">Dashboards &amp; Analytics</text>
+              <text x="760" y="193" class="box-text">Charts &amp; KPIs</text>
+
+              <!-- Arrows -->
+              <line x1="190" y1="75" x2="230" y2="75" class="arrow" marker-end="url(#arrowhead3)" />
+              <text x="210" y="60" class="rel-label">click / form</text>
+
+              <line x1="400" y1="75" x2="440" y2="75" class="arrow" marker-end="url(#arrowhead3)" />
+              <text x="420" y="60" class="rel-label">HTTP request</text>
+
+              <line x1="610" y1="65" x2="650" y2="65" class="arrow" marker-end="url(#arrowhead3)" />
+              <text x="630" y="50" class="rel-label">read / write</text>
+
+              <line x1="760" y1="105" x2="760" y2="140" class="arrow" marker-end="url(#arrowhead3)" />
+              <text x="782" y="125" class="rel-label">feeds</text>
+
+              <line x1="720" y1="180" x2="440" y2="110" class="arrow" marker-end="url(#arrowhead3)" />
+              <text x="580" y="165" class="rel-label">aggregated insights</text>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== DATA & DATASET CREATION ===== -->
+    <section id="data" class="section section-light">
+      <div class="container">
+        <h2>Data &amp; Dataset Creation</h2>
+        <div class="glass">
+          <p>
+            To avoid privacy issues while still modeling realistic behavior, we built a synthetic
+            dataset that reflects typical job-market structures. The dataset includes:
+          </p>
+          <ul class="bullet-list">
+            <li>~1000 synthetic student records with varied skills, education levels, and experience.</li>
+            <li>Hundreds of synthetic job postings across roles such as Data Analyst, Software Engineer, and Cloud Engineer.</li>
+            <li>Employers representing universities, startups, and larger companies.</li>
+          </ul>
+          <p>
+            We defined rules to maintain internal consistency — for example, more advanced roles
+            require higher experience and education levels; technical roles include associated
+            skill tags (e.g., Python, SQL, cloud); and location attributes mirror common job hubs.
+            These rules ensure that the dashboards and match logic generate insights that feel
+            realistic rather than random.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DASHBOARD & DATA ANALYSIS ===== -->
+    <section id="dashboard" class="section section-alt">
+      <div class="container">
+        <h2>Dashboard &amp; Data Analysis</h2>
+        <div class="grid-2">
+          <div class="glass">
+            <h3>Embedded / Linked Dashboard</h3>
+            <p>
+              The core dashboard is implemented in the NEXTGEN MINDS application and exposed via
+              the performance page. It reads directly from the same Google Sheets that store
+              student and job data.
+            </p>
+            <p>
+              Use the link below to open the live dashboard:
+            </p>
+            <a class="btn ghost" href="https://rajeshbhukya29-dot.github.io/Nextgenminds_12/performance.html" target="_blank">
+              Open Performance Dashboard
+            </a>
+          </div>
+          <div class="glass">
+            <h3>Key Insights from Charts</h3>
+            <ul class="bullet-list">
+              <li>
+                Students with skills such as <strong>Python</strong> and <strong>SQL</strong> show
+                the highest match rates for data-focused roles.
+              </li>
+              <li>
+                There is a visible gap in <strong>cloud</strong> and <strong>DevOps</strong> skills
+                compared to the number of jobs requiring them, suggesting a strong upskilling opportunity.
+              </li>
+              <li>
+                Early-career students (0–2 years experience) cluster around internships and junior roles,
+                while those with more experience align with mid-level jobs.
+              </li>
+            </ul>
+            <p>
+              These insights support targeted recommendations: for example, encouraging students to
+              invest in cloud certifications or advanced tooling to increase alignment with high-demand roles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ETHICAL & SOCIAL CONSIDERATIONS ===== -->
+    <section id="ethics" class="section section-light">
+      <div class="container">
+        <h2>Ethical &amp; Social Considerations</h2>
+        <div class="glass">
+          <ul class="bullet-list">
+            <li>
+              <strong>Privacy:</strong> We used synthetic data exclusively for testing dashboards and logic,
+              ensuring no real student records are exposed.
+            </li>
+            <li>
+              <strong>Bias &amp; Fairness:</strong> We intentionally balanced skills and roles across the
+              dataset to avoid reinforcing stereotypes (for example, limiting certain technologies to specific groups).
+            </li>
+            <li>
+              <strong>Transparency:</strong> Matching and recommendations are based on clearly defined rules
+              and visible attributes, not opaque black-box models.
+            </li>
+            <li>
+              <strong>Accessibility:</strong> The platform is web-based, lightweight, and aims to support
+              students across different education levels and backgrounds.
+            </li>
+          </ul>
+          <p>
+            Future work could include formal bias audits, user feedback loops, and better explanation
+            interfaces that help students understand why particular jobs or skills are recommended.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LESSONS LEARNED & TEAM REFLECTION ===== -->
+    <section id="reflection" class="section section-alt">
+      <div class="container">
+        <h2>Lessons Learned &amp; Team Reflection</h2>
+        <div class="glass">
+          <p>
+            NEXTGEN MINDS was a hands-on learning experience in turning an abstract problem into a
+            functional, data-driven product. As a team, we learned:
+          </p>
+          <ul class="bullet-list">
+            <li>The importance of designing the data model before writing frontend or backend code.</li>
+            <li>How small integration details (like CORS, deployment, and API URLs) can block progress if not handled carefully.</li>
+            <li>The storytelling power of dashboards for communicating insights to non-technical audiences.</li>
+            <li>The value of clear role assignment and collaboration across research, architecture, development, and analytics.</li>
+          </ul>
+          <p>
+            Individually, each member developed skills in areas such as spreadsheet-based data
+            engineering, Apps Script development, frontend design, and ethical analysis of
+            technology. Overall, the project gave the team confidence to build end-to-end digital
+            solutions grounded in data.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== APPENDIX / EXTRA ===== -->
+    <section id="appendix" class="section section-light">
+      <div class="container">
+        <h2>Appendix &amp; Additional Resources</h2>
+        <div class="grid-3">
+          <div class="glass">
+            <h3>Live Application</h3>
+            <p>Access the full NEXTGEN MINDS platform:</p>
+            <a class="btn ghost" href="https://rajeshbhukya29-dot.github.io/Nextgenminds_12/" target="_blank">
+              View NEXTGEN MINDS Live App
+            </a>
+          </div>
+          <div class="glass">
+            <h3>GitHub Repository</h3>
+            <p>Source code for the web app and this portfolio site.</p>
+            <a class="btn ghost" href="https://github.com/rajeshbhukya29-dot/NextGenMinds_Portfolio/blob/main/README.md" target="_blank">
+              Open GitHub Repo
+            </a>
+          </div>
+          <div class="glass">
+            <h3>Datasets &amp; Future Work</h3>
+            <ul class="bullet-list small">
+              <li>Students, Jobs, Employers, Contact sheets (synthetic data).</li>
+              <li>Planned: ML-based recommendation engine.</li>
+              <li>Planned: Deeper longitudinal tracking of student outcomes.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 NEXTGEN MINDS. All rights reserved. | Built for the Future.</p>
+      <p class="footer-sub">
+        Project portfolio website for Master’s Research Presentation &amp; long-term career portfolio.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ===== BASIC JS: NAV + SMOOTH SCROLL ===== -->
+  <script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    if (navToggle) {
+      navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", e => {
+        const targetId = anchor.getAttribute("href");
+        if (targetId && targetId.length > 1) {
+          e.preventDefault();
+          document.querySelector(targetId).scrollIntoView({ behavior: "smooth" });
+          navLinks.classList.remove("open");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
